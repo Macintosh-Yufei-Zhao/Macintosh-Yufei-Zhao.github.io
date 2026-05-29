@@ -20,25 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"macintosh-yufei-zhao.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.23.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="Macintosh Yufei Zhao&#39;s personal site, a place to share my thoughts, projects, and experiences.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Live a dynamic life">
-<meta property="og:url" content="https://macintosh-yufei-zhao.github.io/index.html">
+    <meta name="description" content="一、引言与基础介绍在平衡态统计物理课中，我们处理了许多经典的系统。无论是计算气体的配分函数，还是讨论二维 Ising 模型的自发磁化，我们都有一个前提：系统存在于一个具有高度平移对称性的底层空间中，比如欧几里得空间，或者整齐的规则晶格（Lattice）。 在这种高度对称的几何结构上，我们可以较容易地写出局域的哈密顿量。更重要的是，在这些传统的低维甚至一维平衡态系统中，因为结构的规则性，细致平衡（D">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Networks and statistical mechanics">
+<meta property="og:url" content="https://macintosh-yufei-zhao.github.io/Presentations/pre-network-260528/index.html">
 <meta property="og:site_name" content="Live a dynamic life">
-<meta property="og:description" content="Macintosh Yufei Zhao&#39;s personal site, a place to share my thoughts, projects, and experiences.">
+<meta property="og:description" content="一、引言与基础介绍在平衡态统计物理课中，我们处理了许多经典的系统。无论是计算气体的配分函数，还是讨论二维 Ising 模型的自发磁化，我们都有一个前提：系统存在于一个具有高度平移对称性的底层空间中，比如欧几里得空间，或者整齐的规则晶格（Lattice）。 在这种高度对称的几何结构上，我们可以较容易地写出局域的哈密顿量。更重要的是，在这些传统的低维甚至一维平衡态系统中，因为结构的规则性，细致平衡（D">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-05-28T03:24:09.000Z">
+<meta property="article:modified_time" content="2026-05-28T03:24:09.000Z">
 <meta property="article:author" content="Macintosh Yufei Zhao">
 <meta property="article:tag" content="Macintosh Yufei Zhao, personal site, blog, technology, programming, life sciences">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://macintosh-yufei-zhao.github.io/">
+<link rel="canonical" href="https://macintosh-yufei-zhao.github.io/Presentations/pre-network-260528/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://macintosh-yufei-zhao.github.io/Presentations/pre-network-260528/","path":"Presentations/pre-network-260528/","title":"Networks and statistical mechanics"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Live a dynamic life</title>
+<title>Networks and statistical mechanics | Live a dynamic life</title>
   
 
 
@@ -95,7 +97,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Live a dynamic life</h1>
+      <p class="site-title">Live a dynamic life</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">A place of thoughts and feelings -- Rumination.</p>
@@ -122,7 +124,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -135,6 +137,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%BC%95%E8%A8%80%E4%B8%8E%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">一、引言与基础介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E4%B8%AD%E7%9A%84%E5%BE%AE%E8%A7%82%E7%8A%B6%E6%80%81%E2%80%94%E2%80%94%E9%82%BB%E6%8E%A5%E7%9F%A9%E9%98%B5"><span class="nav-number">1.1.</span> <span class="nav-text">网络中的微观状态——邻接矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%AF%E8%A7%82%E6%B5%8B%E9%87%8F"><span class="nav-number">1.2.</span> <span class="nav-text">可观测量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%83%AD%E5%8A%9B%E5%AD%A6%E6%9E%81%E9%99%90"><span class="nav-number">1.3.</span> <span class="nav-text">热力学极限</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E7%BD%91%E7%BB%9C%E7%9A%84%E7%BB%9F%E8%AE%A1%E7%B3%BB%E7%BB%BC%E7%90%86%E8%AE%BA"><span class="nav-number">2.</span> <span class="nav-text">二、网络的统计系综理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#model-1-Erdos-Renyi-%E6%A8%A1%E5%9E%8B%E4%BD%9C%E4%B8%BA%E6%97%A0%E7%9B%B8%E4%BA%92%E4%BD%9C%E7%94%A8%E6%B0%94%E4%BD%93"><span class="nav-number">2.1.</span> <span class="nav-text">model 1: Erdős-Rényi 模型作为无相互作用气体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#model-2-%E5%BA%A6%E5%88%86%E5%B8%83%E7%BA%A6%E6%9D%9F%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C"><span class="nav-number">2.2.</span> <span class="nav-text">model 2 度分布约束下的网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">2.3.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E7%BD%91%E7%BB%9C%E4%B8%8A%E7%9A%84%E7%9B%B8%E5%8F%98%E4%B8%8E%E4%B8%B4%E7%95%8C%E7%8E%B0%E8%B1%A1"><span class="nav-number">3.</span> <span class="nav-text">三、网络上的相变与临界现象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-1-Percolation-%E6%B8%97%E6%B5%81"><span class="nav-number">3.1.</span> <span class="nav-text">Model 1: Percolation 渗流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B8%97%E6%B5%81%E7%9A%84%E4%B8%B4%E7%95%8C%E6%A6%82%E7%8E%87%EF%BC%9AMolloy-Reed-%E5%88%A4%E6%8D%AE"><span class="nav-number">3.2.</span> <span class="nav-text">渗流的临界概率：Molloy-Reed 判据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-2-%E7%BD%91%E7%BB%9C%E4%B8%8A%E7%9A%84-Ising-%E6%A8%A1%E5%9E%8B"><span class="nav-number">3.3.</span> <span class="nav-text">Model 2: 网络上的 Ising 模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-3-%E6%B5%81%E8%A1%8C%E7%97%85%E4%BC%A0%E6%92%AD%E7%9A%84-SIS-%E6%A8%A1%E5%9E%8B"><span class="nav-number">3.4.</span> <span class="nav-text">Model 3: 流行病传播的 SIS 模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A%E4%BA%8C%E9%98%B6%E7%9F%A9%E7%9A%84%E9%87%8D%E8%A6%81%E5%BD%B1%E5%93%8D"><span class="nav-number">3.5.</span> <span class="nav-text">总结：二阶矩的重要影响</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E9%83%A8%E5%88%86%EF%BC%9A%E7%BD%91%E7%BB%9C%E4%B8%8A%E7%9A%84%E5%8A%A8%E5%8A%9B%E5%AD%A6%E4%B8%8E%E5%A4%8D%E6%9D%82%E7%B3%BB%E7%BB%9F%E6%98%A0%E5%B0%84"><span class="nav-number">4.</span> <span class="nav-text">第四部分：网络上的动力学与复杂系统映射</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E5%A4%8D%E6%9D%82%E7%BD%91%E7%BB%9C%E7%9A%84%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B%E4%B8%8E%E9%9D%9E%E5%B9%B3%E8%A1%A1%E7%A8%B3%E6%80%81"><span class="nav-number">5.</span> <span class="nav-text">五、复杂网络的随机过程与非平衡稳态</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%86%E8%87%B4%E5%B9%B3%E8%A1%A1-detailed-balance-%E4%B8%8E%E6%A6%82%E7%8E%87%E6%B5%81"><span class="nav-number">5.1.</span> <span class="nav-text">细致平衡 detailed balance 与概率流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E5%AD%90%EF%BC%9A%E4%B8%89%E8%8A%82%E7%82%B9%E7%BD%91%E7%BB%9C%E4%B8%8E-Schnakenberg-%E4%BA%B2%E5%92%8C%E5%8A%9B"><span class="nav-number">5.2.</span> <span class="nav-text">例子：三节点网络与 Schnakenberg 亲和力</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E7%BD%91%E7%BB%9C%E4%B8%8A%E7%9A%84%E9%9D%9E%E7%BA%BF%E6%80%A7%E5%8A%A8%E5%8A%9B%E5%AD%A6%E4%B8%8E%E5%88%86%E5%B2%94"><span class="nav-number">6.</span> <span class="nav-text">六、网络上的非线性动力学与分岔</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#model%EF%BC%9A%E8%80%A6%E5%90%88%E6%8C%AF%E5%AD%90%E4%B8%8E-Kuramoto-%E6%A8%A1%E5%9E%8B"><span class="nav-number">7.</span> <span class="nav-text">model：耦合振子与 Kuramoto 模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A9%BA%E9%97%B4%E5%88%86%E5%B2%94%EF%BC%9A%E5%9B%BE%E7%81%B5%E5%A4%B1%E7%A8%B3%E4%B8%8E%E7%BD%91%E7%BB%9C"><span class="nav-number">7.1.</span> <span class="nav-text">空间分岔：图灵失稳与网络</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Kuramoto-%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%8E%A8%E5%AF%BC"><span class="nav-number">7.1.1.</span> <span class="nav-text">Kuramoto 模型的推导</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E6%80%BB%E7%BB%93"><span class="nav-number">8.</span> <span class="nav-text">七、总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E5%90%8E%E7%9A%84%E8%AF%9D"><span class="nav-number">8.1.</span> <span class="nav-text">最后的话</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -185,176 +188,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://macintosh-yufei-zhao.github.io/MyIntro/MyIntro/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/pic.jpg">
-      <meta itemprop="name" content="Macintosh Yufei Zhao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live a dynamic life">
-      <meta itemprop="description" content="Macintosh Yufei Zhao's personal site, a place to share my thoughts, projects, and experiences.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Live a dynamic life">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-              <span class="post-sticky-flag" title="Sticky">
-                <i class="fa fa-thumbtack"></i>
-              </span><a href="/MyIntro/MyIntro/" class="post-title-link" itemprop="url">An Introduction of Myself</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2025-07-06 04:29:40" itemprop="dateCreated datePublished" datetime="2025-07-06T04:29:40+08:00">2025-07-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/Categories/MyIntro/" itemprop="url" rel="index"><span itemprop="name">MyIntro</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="Brief-Intro"><a href="#Brief-Intro" class="headerlink" title="Brief Intro"></a>Brief Intro</h2><ul>
-<li>Hi, I am Yufei Zhao @Macintosh-Yufei-Zhao</li>
-<li>I am an undergraduate student from Yuanpei College, Peking University.</li>
-<li>I currently major in the Integrated Science Program. The program focuses on biophysics research.</li>
-<li>I am looking to collaborate on fellows in the disciplines of systems biology, bioinformatics, synthetic biology, dynamic and statistic biological models and (maybe) oncology.</li>
-<li>Recently I am really fascinated in <strong>complex system theory &amp; emergence</strong> and welcome to join me.</li>
-<li>Well, I am an ENTP-A debater, so I am happy to hear from you and (if possible) debate with you!</li>
-<li>I am always a note-taker, -lover and -sharer, so please visit <a href="macintosh-yufei-zhao.github.io/Resources/res-notes">this site</a> to get access to all my notes and other resources.</li>
-<li>As a enthusiastic representative, I commit myself to undergrad freshman recruiting of PKU. Now I am the student leader of my district. I am really glad to share my experiences and stories to anyone who needs them.</li>
-<li>个人简介的中文版在<a href="macintosh-yufei-zhao.github.io/MyIntro/MyIntro-Chinese">中文版自我介绍</a>（如果能不懒得写的话）</li>
-<li>A certificate backup is on <a href="macintosh-yufei-zhao.github.io/backup">here</a></li>
-</ul>
-<h2 id="Research-Interests"><a href="#Research-Interests" class="headerlink" title="Research Interests"></a>Research Interests</h2><ul>
-<li><strong>Network Science and Biological Networks</strong>: I am curious about how biological networks function properly through specific topology, and how these topology evolved. I am determined to find a way to analyze the biological network with more direct or simple methods, and work on the non-linear properties of biological networks.<ul>
-<li>My undergraduate research focuses on the network behind the circadian clock.</li>
-</ul>
-</li>
-<li><strong>Complex Systems, Chaos and Emergence</strong>: It is my belief that emergence is the future of life sciences. The fact that intelligence, self-organization and other complicated behaviours emerge when system size grows to a certain threshold is so fascinating and the mechanism behind each individual is so simple that I want to find more about it.</li>
-<li><strong>Deep Learning, LLM and Neuron Networks</strong>: Although I am not majoring in AI, the development of AI will definitely affect everything. I want to know how AI models make ‘decisions’, think ‘logically’ and ‘evolve’ with training. Also, this is without doubt an example of emergence.</li>
-</ul>
-<h2 id="Contact-and-Accounts"><a href="#Contact-and-Accounts" class="headerlink" title="Contact and Accounts"></a>Contact and Accounts</h2><ul>
-<li>WeChat: sdzhaoyufei2004 (Reach me via WeChat!)</li>
-<li>e-mail: <a href="sdzhaoyufei@stu.pku.edu.cn">sdzhaoyufei@stu.pku.edu.cn</a> and <a href="sdzhaoyufei@126.com">sdzhaoyufei@126.com</a></li>
-<li>Bilibili: <a target="_blank" rel="noopener" href="https://space.bilibili.com/380035309">江州司马平安否Macintosh</a></li>
-<li>知乎Zhihu: <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/wo-men-du-shi-zhui-meng-ren-93-74">江州司马平安否</a></li>
-<li>WeChat Official Account: 江州司马平安否</li>
-<li>QQ: 1636843624</li>
-<li>Github: <a target="_blank" rel="noopener" href="https://github.com/Macintosh-Yufei-Zhao">Macintosh-Yufei-Zhao</a></li>
-<li>Mail Address: Peking University, No.5 Yiheyuan Road, Haidian District, Beijing, P.R.China 100871</li>
-</ul>
-<h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><ul>
-<li><strong>2022.9 - Now</strong>   University education at <em>Peking University</em>.<ul>
-<li>B.S. in the <em>Integrated Science Program</em> in Yuanpei College.</li>
-</ul>
-</li>
-<li><strong>2019.9 - 2022.6</strong>   Senior high school at <em>Beizhen High School of Shandong Province</em>.</li>
-<li><strong>2016.9 - 2019.6</strong>   Junior high scool at <em>Binzhou Experimental School</em>.</li>
-<li><strong>2010.9 - 2016.6</strong>   Primary school at <em>Binzhou Experimental School</em>.</li>
-</ul>
-<h2 id="Achievements"><a href="#Achievements" class="headerlink" title="Achievements"></a>Achievements</h2><ul>
-<li><strong>Dec 2025</strong>   <em>Scholarship of China Merchants Securities</em>, Peking University<br><a href="">Certificate</a></li>
-<li><strong>Dec 2025</strong>   <em>Award for Excellence in Scientific Research</em>, Peking University<br><a href="">Certificate</a></li>
-<li><strong>Nov 2025</strong>   Gold Medal, <em>international Genetically Engineered Machine(iGEM) 2024</em>, member of team Peking<br><a href="./MyIntro/MyIntro/2025igem%E8%AF%81%E4%B9%A6.pdf">Certificate</a> and team project <a href="2025.igem.wiki/peking">wiki</a><br>Awards: Top 10, Best Model, Best Infectious Diseases Project nomination, Best Integrated Human Practices nomination.</li>
-<li><strong>Oct 2024</strong>   Gold Medal, <em>international Genetically Engineered Machine(iGEM) 2024</em>, member of team Peking<br><a href="./MyIntro/MyIntro/2024igem%E8%AF%81%E4%B9%A6.pdf">Certificate</a> and team project <a href="2024.igem.wiki/peking">wiki</a></li>
-<li><strong>Aug 2024</strong>   Gold Medal, <em>Synbio Challenge 2024</em>, member of team PekingGPA<br><a href="./MyIntro/MyIntro/7.3%E5%90%88%E6%88%90%E7%94%9F%E7%89%A9%E5%AD%A6%E5%88%9B%E6%96%B0%E8%B5%9B.pdf">Certificate</a></li>
-<li><strong>Dec 2023</strong>   <em>Award for Contributions in Student Organizations</em>, Peking University<br><a href="./MyIntro/MyIntro/2023%E7%A4%BE%E4%BC%9A%E5%B7%A5%E4%BD%9C%E5%A5%96.pdf">Certificate</a></li>
-<li><strong>Sep 2022</strong>   <em>Second Prize Scholarship for Freshmen</em>, Peking University</li>
-</ul>
-<h2 id="Social-Activities-and-Experiences"><a href="#Social-Activities-and-Experiences" class="headerlink" title="Social Activities and Experiences"></a>Social Activities and Experiences</h2><ul>
-<li><strong>2022.9 - Now</strong>   Joining the CPC<ul>
-<li><strong>2022.9 - 2023.5</strong>    Active member of joining the CPC</li>
-<li><strong>2023.5 - 2024.12</strong>   Candidate of joining the CPC</li>
-<li><strong>2024.12 - 2025.6</strong>   Nominee of joining the CPC</li>
-<li><strong>2025.6 - Now</strong>       Probationary member of the CPC</li>
-</ul>
-</li>
-<li><strong>2022.9 - 2024.7</strong>   Member and Vice Minister<br><em>Organization Department</em>, the Communist Youth League Committee, Yuanpei College, Peking University</li>
-<li><strong>2022.9 - 2024.7</strong>   Member and Vice Minister<br><em>Department of Scientific Research</em>, Students’ Academic Committee, Yuanpei College, Peking University</li>
-<li><strong>2023.9 - Now</strong>   Member<br><em>Organization Department</em>, the Communist Youth League Committee, Peking University</li>
-<li><strong>2022.9 - Now</strong>   Member and Student Leader<br><em>Recruitment Delegation for Shandong Province</em>, Peking University<ul>
-<li><strong>2023 &amp; 2024</strong> Excellent Volunteer of Recruitment</li>
-<li><strong>2023.1 &amp; 2024.1 &amp; 2025.2</strong>   Member and Student Leader<br>Winter propaganda for recruitment</li>
-<li><strong>2023.6 &amp; 2024.6 &amp; 2025.6</strong>   Member and Student Leader<br>Summer recruitment after Gaokao</li>
-<li><strong>2023.7 &amp; 2024.8</strong>   Head Teacher<br>PKU National Summer Camp for Outstanding Middle School Students</li>
-</ul>
-</li>
-<li><strong>2022.9 - Now</strong>   Member of the Class Committee<br><em>Class 4, Grade 2022</em>, Yuanpei College, Peking University<ul>
-<li><strong>2022.9 - 2023.8</strong>   Class Representative in Charge of Studies</li>
-<li><strong>2023.9 - Now</strong>   Class Leader</li>
-</ul>
-</li>
-<li><strong>2024.9 - 2025.1</strong>   Student Counselor for Freshmen<br><em>Student Affairs Office</em>, Yuanpei College, Peking University</li>
-<li><strong>2023.7 - 2023.9</strong>   Editor<br>the <em>Chinese Hospital Ship</em> Book Committee</li>
-<li><strong>2022.9 - Now</strong>   Member - ‘Agony Youth’<br><em>General Store of Solving Worries</em>, Teach for China Programme &amp; Taiping Middle School, Baoshan, Yunnan Province</li>
-</ul>
-<h2 id="Passion"><a href="#Passion" class="headerlink" title="Passion!"></a>Passion!</h2><ul>
-<li>I am a lover of <strong>Reach Mahjong</strong>: I like playing Maj-soul, Tenhou and face-to-face mahjong. I enjoy watching M. League and watching YouTube shows by those Mahjong Pros. Join me and have a nice game!</li>
-<li>I like playing <strong>Rhythm Games</strong> like Phigros, Maimai, Arcaea, Orzmic, Project Sekai and others. I am a middle-level player and trying to achieve better accuracy. Share your favorite songs with me!</li>
-<li>I am a light <strong>Honor of Kings</strong> player and likes to watch the official competition KPL.</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="https://macintosh-yufei-zhao.github.io/Presentations/pre-network-260528/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -368,13 +212,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Live a dynamic life">
+      <meta itemprop="name" content="Networks and statistical mechanics | Live a dynamic life">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/Presentations/pre-network-260528/" class="post-title-link" itemprop="url">Networks and statistical mechanics</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Networks and statistical mechanics
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -405,8 +249,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="一、引言与基础介绍"><a href="#一、引言与基础介绍" class="headerlink" title="一、引言与基础介绍"></a>一、引言与基础介绍</h2><p>在平衡态统计物理课中，我们处理了许多经典的系统。无论是计算气体的配分函数，还是讨论二维 Ising 模型的自发磁化，我们都有一个前提：<strong>系统存在于一个具有高度平移对称性的底层空间中</strong>，比如欧几里得空间，或者整齐的规则晶格（Lattice）。</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="一、引言与基础介绍"><a href="#一、引言与基础介绍" class="headerlink" title="一、引言与基础介绍"></a>一、引言与基础介绍</h2><p>在平衡态统计物理课中，我们处理了许多经典的系统。无论是计算气体的配分函数，还是讨论二维 Ising 模型的自发磁化，我们都有一个前提：<strong>系统存在于一个具有高度平移对称性的底层空间中</strong>，比如欧几里得空间，或者整齐的规则晶格（Lattice）。</p>
 <p>在这种高度对称的几何结构上，我们可以较容易地写出局域的哈密顿量。更重要的是，在这些传统的低维甚至一维平衡态系统中，因为结构的规则性，细致平衡（Detailed balance）通常能严格决定系统的稳态。</p>
 <p>然而，当我们把目光投向更广泛的复杂系统时，这种“平移对称性”的假设失效了。让我们举两个例子：</p>
 <ul>
@@ -888,7 +731,6 @@ K_c = \frac{2}{\pi g(0)} \frac{\langle k \rangle}{\langle k^2 \rangle}
 </ul>
 <h3 id="最后的话"><a href="#最后的话" class="headerlink" title="最后的话"></a>最后的话</h3><p>凝聚态物理的先驱 P.W. Anderson 曾经说过一句名言：“More is different”（多者异也）。这确立了统计物理存在的根基。而当我们进入网络科学的世界，应当再加一句：More is more different in networks.</p>
 
-      
     </div>
 
     
@@ -896,8 +738,18 @@ K_c = \frac{2}{\pi g(0)} \frac{\langle k \rangle}{\langle k^2 \rangle}
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/Resources/res-useful-pages/" rel="prev" title="在北大十分好用的非官方（亦有小众官方）网站分享">
+                  <i class="fa fa-angle-left"></i> 在北大十分好用的非官方（亦有小众官方）网站分享
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -905,693 +757,7 @@ K_c = \frac{2}{\pi g(0)} \frac{\langle k \rangle}{\langle k^2 \rangle}
 
 
 
-    
 
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://macintosh-yufei-zhao.github.io/Resources/res-useful-pages/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/pic.jpg">
-      <meta itemprop="name" content="Macintosh Yufei Zhao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live a dynamic life">
-      <meta itemprop="description" content="Macintosh Yufei Zhao's personal site, a place to share my thoughts, projects, and experiences.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Live a dynamic life">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/Resources/res-useful-pages/" class="post-title-link" itemprop="url">在北大十分好用的非官方（亦有小众官方）网站分享</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2026-02-10 22:53:43" itemprop="dateCreated datePublished" datetime="2026-02-10T22:53:43+08:00">2026-02-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/Categories/Resources/" itemprop="url" rel="index"><span itemprop="name">Resources</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <ul>
-<li>北京大学非官方课程测评：<a target="_blank" rel="noopener" href="https://courses.pinzhixiaoyuan.com/">https://courses.pinzhixiaoyuan.com/</a></li>
-<li>北京大学教务官方课程开课信息查询：<a target="_blank" rel="noopener" href="https://dean.pku.edu.cn/service/web/courseSearch.php">https://dean.pku.edu.cn/service/web/courseSearch.php</a><br>此网站的数据库查询做的一坨，速度很慢，呼吁官方修复。</li>
-<li>北京大学选课网妙妙小工具：<a target="_blank" rel="noopener" href="https://github.com/Somoku/PKUElective2022Spring">https://github.com/Somoku/PKUElective2022Spring</a><br>初版工具由 ZhongXinghong 学长开发，学长亦是树洞的首批开发者之一，伟大！</li>
-<li>北京大学教学网美化样式 PKU-Art：<a target="_blank" rel="noopener" href="https://arthals.ink/blog/pku-art">https://arthals.ink/blog/pku-art</a><br>此人（称其为 A 神）简直是所有北大人的福音！</li>
-<li>北京大学课程笔记资料分享平台 PKU HUB：<a target="_blank" rel="noopener" href="https://e.pkuhub.cn/">https://e.pkuhub.cn/</a><br>继肥猴和赛艇后的另一民间资料分享平台，正在逐步完善中，欢迎加入！</li>
-<li>北京大学食堂年度总结：<a target="_blank" rel="noopener" href="https://eat-at-pku.aiyu.fun/">https://eat-at-pku.aiyu.fun/</a><br>很有趣的小工具，可以看到自己有多么能吃（）</li>
-<li>北大学生的翻墙神源，免费的科学上网 wallessPKU：<a target="_blank" rel="noopener" href="https://wallesspku.com/">https://wallesspku.com/</a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://macintosh-yufei-zhao.github.io/Rumination/retro-2026-birthday/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/pic.jpg">
-      <meta itemprop="name" content="Macintosh Yufei Zhao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live a dynamic life">
-      <meta itemprop="description" content="Macintosh Yufei Zhao's personal site, a place to share my thoughts, projects, and experiences.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Live a dynamic life">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/Rumination/retro-2026-birthday/" class="post-title-link" itemprop="url">2026年的人生第一份生日文案</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2026-01-20 23:51:57" itemprop="dateCreated datePublished" datetime="2026-01-20T23:51:57+08:00">2026-01-20</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/Categories/Rumination/" itemprop="url" rel="index"><span itemprop="name">Rumination</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>来到22岁的第四天，写下无所起亦无所终的文字，献给青春，也献给一路遇见的所有人，更为自己打一个锚点。</p>
-<p>过去的一年实在是有趣，但却又像一眨眼，人生果然是对数的。不过，也值得把希望铭记的事情写下来，回看总要有些不一样的色彩。</p>
-<p>春天是美好的季节，生命力在此时喷薄。春天参加挑战班，也参加了新的感兴趣的科研尝试，我像迷路的孩子终于发现乐园，寻找到了本专业真正的快乐。感谢徐姐的文章，出乎意料地让我燃起了对科研的极大热情，也让我能够有更多的想法和意义去做之前已经对此迷茫的事情。找到意义，永远是我心中最乐而忘忧的事情。</p>
-<p>夏天是收获的季节，但这个收获颇具坎坷。保研季，整个娃娃合唱团都在一起焦虑哇哇乱叫，那段日子的色调是灰暗的，我又试图用各种方式掩盖这段灰暗，却怎么也抹不去。当凌晨三点看到邮件的那一刻，我却不知怎的兴奋不起来，只有疲惫和松弛。假期末的山西之行和日本之行，为这个炎热的夏天画上了完美的句号，让我能够以快乐和热情迎接大四的生活。</p>
-<p>秋天是奋斗的季节，新的起点就要挑战自我。明明是大四却选了一堆硬课，每天回放听听听听到厌倦，可又自己还挺喜欢，难道我真的是小M（）不过充实的生活和偶尔的娱乐（打牌+王者真的只是偶尔吗）也过得有滋有味，更何况还有了早饭搭子自习搭子溜达搭子等一众搭子合一的绝佳搭子（初见端倪）</p>
-<p>冬天的大雪，是洁白的爱情。北京的初雪下，我们漫步未名湖边，她像一个天使走入我的生活。迎接生日的又是一场大雪，她的礼物是这雪中最好的温暖。互相支持，互相关心，理想中的爱情就这样降临到我身上，不知是几世修来。写下这句的此刻，我突然意识到，原来“最好的朋友在身边，最爱的人在对面”不是一句虚言。</p>
-<p>感谢宝宝的爱，感谢娃娃合唱团大家的陪伴，感谢和我一起打牌打游戏聊天的雀队的老龟团的牌群的……朋友们，感谢一路帮助我给我鼓励的大家，新的一岁，新的起点。</p>
-<p>莫谩拘牵雨花社，青云依旧是前途！</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://macintosh-yufei-zhao.github.io/Resources/res-notes/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/pic.jpg">
-      <meta itemprop="name" content="Macintosh Yufei Zhao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live a dynamic life">
-      <meta itemprop="description" content="Macintosh Yufei Zhao's personal site, a place to share my thoughts, projects, and experiences.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Live a dynamic life">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/Resources/res-notes/" class="post-title-link" itemprop="url">My Lecture Notes and Other Resources</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2026-01-06 16:56:51" itemprop="dateCreated datePublished" datetime="2026-01-06T16:56:51+08:00">2026-01-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/Categories/Resources/" itemprop="url" rel="index"><span itemprop="name">Resources</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="数学物理类"><a href="#数学物理类" class="headerlink" title="数学物理类"></a>数学物理类</h2><ul>
-<li>2024年秋季：《平衡态统计物理》 授课教师：杨志成 <a href="./2024-f-stat-physics.pdf">课程笔记</a></li>
-<li>2025年春季：《线性代数B》 授课教师：刘旭峰 教材：《简明线性代数》<a href="./Resources/res-notes/2025-s-linear-algebra.pdf">课程笔记</a></li>
-<li>2025年秋季：《概率统计B》 授课教师：刘力平 教材：《概率统计讲义（第三版）》<a href="./Resources/res-notes/2025-f-prob-stat.pdf">课程笔记</a></li>
-<li>2025年秋季：《量子力学A》 授课教师：全海涛 教材：《Introduction to Quantum Mechanics (Griffith)》<a href="./Resources/res-notes/2025-f-quantum-mech.pdf">课程笔记</a></li>
-</ul>
-<h2 id="生命科学类"><a href="#生命科学类" class="headerlink" title="生命科学类"></a>生命科学类</h2><ul>
-<li>2024年秋季：《演化生物学》 授课教师：罗述金、遇赫 <a target="_blank" rel="noopener" href="https://www.zhihu.com/column/c_1847503299298865152">课程笔记</a></li>
-</ul>
-<h2 id="工程与信息科学类"><a href="#工程与信息科学类" class="headerlink" title="工程与信息科学类"></a>工程与信息科学类</h2><ul>
-<li>2025年秋季：《机器学习》 授课教师：张牧涵 <a target="_blank" rel="noopener" href="https://sudsy-manager-765.notion.site/2025Fall-full-ver-26afcdc749d8805bb203e82b8813c7b9">课程笔记</a> <a target="_blank" rel="noopener" href="https://github.com/MuLabPKU/MachineLearningCourse2025">课程Github</a> <a target="_blank" rel="noopener" href="https://github.com/Macintosh-Yufei-Zhao/2025_Fall_MachineLearning_PKU">作业及Lab</a></li>
-</ul>
-<h2 id="哲学社会科学类"><a href="#哲学社会科学类" class="headerlink" title="哲学社会科学类"></a>哲学社会科学类</h2><ul>
-<li>2024年秋季：《中国通史》 授课教师：陈侃理 <a target="_blank" rel="noopener" href="https://sudsy-manager-765.notion.site/c5655364194d4b2284ecd4d8770c861b?v=6e13a84d5c8e4dc8b71adebb7e78e6d200000000000000000000000000000000000000000">课程笔记</a></li>
-<li>2025年春季：《理想国》 授课教师：吴增定 <a target="_blank" rel="noopener" href="https://sudsy-manager-765.notion.site/2025spring-full-ver-1a2fcdc749d8804bb17ad3cfa502399f">课程笔记</a> </li>
-<li>2025年春季：《社会博弈论》 授课教师：陶林 教材：《Introduction to Game Theory (Osborne)》<a target="_blank" rel="noopener" href="https://sudsy-manager-765.notion.site/2025spring-full-ver-1b1fcdc749d880bab1c1c6db7ca4d147">课程笔记</a> <a target="_blank" rel="noopener" href="https://github.com/Macintosh-Yufei-Zhao/public-share/tree/main/25spring-game-theory">课件、作业和往年题</a></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://macintosh-yufei-zhao.github.io/Rumination/retro-2025-review/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/pic.jpg">
-      <meta itemprop="name" content="Macintosh Yufei Zhao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live a dynamic life">
-      <meta itemprop="description" content="Macintosh Yufei Zhao's personal site, a place to share my thoughts, projects, and experiences.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Live a dynamic life">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/Rumination/retro-2025-review/" class="post-title-link" itemprop="url">2025年度回顾</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2026-01-01 00:00:00" itemprop="dateCreated datePublished" datetime="2026-01-01T00:00:00+08:00">2026-01-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/Categories/Rumination/" itemprop="url" rel="index"><span itemprop="name">Rumination</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>2025年似乎一眨眼就过去了，这一年经历了起起又落落，却也都在最后取得了还算不错的结果。<br>在春天加入了挑战班，开始真正像个学生物的人一样去读文献尝试科研，探索自己真正想做的领域——系统生物学，不失为乐事；在此之外，与麻友们隔三差五切磋玩乐，倒也不错。<br>保研倒是有了一番波折，也曾为此而焦虑心急，但总算是拿到了心仪的offer，能够在博士五年里（大概会）研究一些还算感兴趣的内容；学了量子力学等等硬课，虽然过程很痛苦，但似乎收获也不少。<br>去了山西和日本旅游，一和家人一和朋友，看到了很多不一样的景色，有了很多不一样的体验，也美美的过了一把真正的大学生活。<br>年末的幸福来得突然而又不那么突然，遇到了那个我真心爱的她，一起度过了年末的时间，共同开心共同努力，神仙般的日子简直不要太好~</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://macintosh-yufei-zhao.github.io/Games/game-the-past-within/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/pic.jpg">
-      <meta itemprop="name" content="Macintosh Yufei Zhao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live a dynamic life">
-      <meta itemprop="description" content="Macintosh Yufei Zhao's personal site, a place to share my thoughts, projects, and experiences.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Live a dynamic life">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/Games/game-the-past-within/" class="post-title-link" itemprop="url">Game Review - 锈湖系列之过去寓于己身 The Past Within</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2025-10-08 00:01:19" itemprop="dateCreated datePublished" datetime="2025-10-08T00:01:19+08:00">2025-10-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/Categories/Games/" itemprop="url" rel="index"><span itemprop="name">Games</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://macintosh-yufei-zhao.github.io/Rumination/retro-250926/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/pic.jpg">
-      <meta itemprop="name" content="Macintosh Yufei Zhao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live a dynamic life">
-      <meta itemprop="description" content="Macintosh Yufei Zhao's personal site, a place to share my thoughts, projects, and experiences.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Live a dynamic life">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/Rumination/retro-250926/" class="post-title-link" itemprop="url">An amazing talk of everything</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2025-09-26 23:33:12" itemprop="dateCreated datePublished" datetime="2025-09-26T23:33:12+08:00">2025-09-26</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/Categories/Rumination/" itemprop="url" rel="index"><span itemprop="name">Rumination</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>很神奇的夜聊。起因是朋友情绪有点低落一起绕湖溜达，然后不知怎的聊到了各式各样的话题，确实是我思维过于跳脱。回想之前老是想把话题分开每个都写明白再发，突然发现似乎并不需要这样，及时的记录和整理或许更是需要做的，因而决定回来把思绪复盘，等没有量子力学作业（可恶qht）的时候massively写出来。（zyjj请不要再cue我辣）</p>
-<p>话题似乎是从与家长的关系开始的，聊的是与家长的认知差异及其影响，然后就跳到了家长认知改变后的行动和我们对行动的认知，进一步又聊到了行动改变的意愿时间和认知改变的时间阈值。然后似乎是一句话，就又蹦到了与家长“一打电话就知道会怎么说”，讨论了一小点信息交流效率和进化的问题，很快就又蹦到了对应的所谓“情绪价值”进而延伸到亲人际型和亲自然型的人，由此延伸到能量的获取途径，人际交往的即时共鸣，以及读书以获取能量的无数人共鸣和人类本身的共鸣。可能是最近柏拉图看多了，突然在想这样的共鸣算不算自己追求“人”这个ideal的存在的一种自觉？这样的想法之前是没有的，又感觉像是灵魂生出的孩子。（其实在回顾的时候又想到了《会饮》里面所谓爱是寻求合一的段落）然后被朋友夸思维方式有点像戴老师但语言不够凝练清晰，嘿嘿</p>
-<p>后面话题突然转向招生，谈到北大的情怀，说到本科生教育，说到课程内容与授课教师，说到通识教育。又想起自己之前计划里有关北大精神的内容，痛斥自己为什么迟迟不动手写。回来先大概记这么多吧，看趁十一假期能不能把它写出来。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://macintosh-yufei-zhao.github.io/Resources/res-bilibili/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/pic.jpg">
-      <meta itemprop="name" content="Macintosh Yufei Zhao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live a dynamic life">
-      <meta itemprop="description" content="Macintosh Yufei Zhao's personal site, a place to share my thoughts, projects, and experiences.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Live a dynamic life">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/Resources/res-bilibili/" class="post-title-link" itemprop="url">Video Series Recommendation</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2025-09-23 11:24:09" itemprop="dateCreated datePublished" datetime="2025-09-23T11:24:09+08:00">2025-09-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/Categories/Resources/" itemprop="url" rel="index"><span itemprop="name">Resources</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="人文学科"><a href="#人文学科" class="headerlink" title="人文学科"></a>人文学科</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Mw4m1k7er">复旦大学哲学学院《生物学哲学》张明君</a></p>
-<h2 id="数理基础"><a href="#数理基础" class="headerlink" title="数理基础"></a>数理基础</h2><p>CMU 复杂系统</p>
-<h2 id="生命科学基础"><a href="#生命科学基础" class="headerlink" title="生命科学基础"></a>生命科学基础</h2><h2 id="下饭小视频推荐"><a href="#下饭小视频推荐" class="headerlink" title="下饭小视频推荐"></a>下饭小视频推荐</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://space.bilibili.com/23947287">B站up主小约翰可汗</a><ul>
-<li><a target="_blank" rel="noopener" href="https://space.bilibili.com/23947287/lists/1095498">小约翰可汗 - 硬核狠人</a></li>
-<li><a target="_blank" rel="noopener" href="https://space.bilibili.com/23947287/lists/665">小约翰可汗 - 奇葩小国</a></li>
-<li><a target="_blank" rel="noopener" href="https://space.bilibili.com/23947287/lists/1095498">小约翰可汗 - 神奇组织</a></li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://macintosh-yufei-zhao.github.io/Games/game-figment/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/pic.jpg">
-      <meta itemprop="name" content="Macintosh Yufei Zhao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live a dynamic life">
-      <meta itemprop="description" content="Macintosh Yufei Zhao's personal site, a place to share my thoughts, projects, and experiences.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Live a dynamic life">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/Games/game-figment/" class="post-title-link" itemprop="url">Game Review - Figment 虚构世界</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2025-09-06 03:23:30" itemprop="dateCreated datePublished" datetime="2025-09-06T03:23:30+08:00">2025-09-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/Categories/Games/" itemprop="url" rel="index"><span itemprop="name">Games</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="基础信息"><a href="#基础信息" class="headerlink" title="基础信息"></a>基础信息</h2><ul>
-<li>价格：58元（epic）；2025年6月epic免费送出。</li>
-<li>游戏类型：解谜；单人；剧情；卡通。</li>
-<li>开发商：Bedtime Digital Games。</li>
-<li>发行时间：2020年3月26日。</li>
-<li>游玩时间：共可大致分为三个章节，每个章节游玩时间在两个小时左右。</li>
-<li>语言：支持简体中文。</li>
-<li>其他联系：续作有Figment2: Creed Valley。</li>
-</ul>
-<h2 id="剧情简介-游玩体验"><a href="#剧情简介-游玩体验" class="headerlink" title="剧情简介 &amp; 游玩体验"></a>剧情简介 &amp; 游玩体验</h2><h2 id="攻略"><a href="#攻略" class="headerlink" title="攻略"></a>攻略</h2><p>一个比较完整的视频攻略在 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Eteve3ET6">B站视频攻略</a>，这份攻略有up主探索的过程，看起来还蛮有意思；难度其实不大，不怎么能卡关，自己玩就够了；隐藏关有些是真的注意不到，所以只能又回去补了。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
 
 </div>
   </main>
